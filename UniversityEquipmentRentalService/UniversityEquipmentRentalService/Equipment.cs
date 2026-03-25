@@ -1,3 +1,5 @@
+using System.Reflection.PortableExecutable;
+
 namespace UniversityEquipmentRentalService;
 
 public class Equipment
@@ -22,4 +24,16 @@ public class Equipment
     
     //Information about insurance value
     public int insurance;
+    
+    //Filed used to generate Serial number
+    protected static int index = 0;
+
+    protected virtual string generateSerialNumber()
+    {
+        index++;
+        index.ToString("D5");
+        string prefix = "VD";
+        
+        return prefix + index;
+    }
 }
