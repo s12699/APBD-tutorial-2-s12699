@@ -1,6 +1,6 @@
 ﻿namespace UniversityEquipmentRentalService;
 
-public class program
+public class UniversityEquipmentRentalService
 {
     public static void Main(string[] args)
     {

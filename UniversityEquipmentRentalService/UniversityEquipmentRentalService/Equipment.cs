@@ -36,4 +36,21 @@ public class Equipment
         
         return prefix + index;
     }
+
+    public Equipment(string name, string manufacturer, int insurance)
+    {
+        this.name = name;
+        this.manufacturer = manufacturer;
+        this.insurance = insurance;
+        this.serialNumber = generateSerialNumber();
+    }
+
+    public void displayInfo()
+    {
+        Console.WriteLine("Equipment Information:");
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Serial Number: " + serialNumber);
+        Console.WriteLine("Manufacturer: " + manufacturer);
+        Console.WriteLine("Insurance Value: " + insurance);
+    }
 }
