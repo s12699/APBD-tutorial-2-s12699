@@ -37,7 +37,7 @@ public class Equipment
         return prefix + index;
     }
 
-    public Equipment(string name, string manufacturer, int insurance)
+    public Equipment(string name, string manufacturer, int insurance, string status)
     {
         this.name = name;
         this.manufacturer = manufacturer;
